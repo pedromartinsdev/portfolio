@@ -83,14 +83,19 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 
   gap: 20px;
+
 }
 
 .project {
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
 }
 
 .project__image-container img{
   width: 100%;
+  border-radius: 8px 8px 0 0;
+
 }
 
 .project__content,
@@ -134,4 +139,15 @@ div#links-footer.links p {
 div#links-footer.links p a{
   margin: 0 5px;
   border: none;
+}
+
+@media(max-width: 1000px){
+  .projects {
+    max-width: 500px;
+    margin: 0 auto;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 }
