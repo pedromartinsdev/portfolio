@@ -42,7 +42,7 @@ header {
 }
 
 #wrapper img {
-  height: 300px;
+  height: 200px;
   border-radius: 50%;
   border: 5px solid tomato;
   margin-bottom: 32px;
@@ -72,8 +72,6 @@ header {
 #wrapper p a {
   color: rgb(255, 99, 71);
 }
-
-
 
 /* projects */
 
@@ -105,7 +103,7 @@ header {
   grid-template-columns: 1fr 1fr;
 }
 
-.project__technologie{
+.project__level{
   background-color: #282a36;
   filter: brightness(80%);
   text-align: center;
@@ -116,9 +114,6 @@ header {
 
   padding: 5px 20px;
 }
-
-
-
 
 #links-footer a {
   border-bottom: 1px solid tomato;
