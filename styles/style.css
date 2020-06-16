@@ -49,14 +49,14 @@ header {
 }
 
 #wrapper h1 {
-  font-size: 42px;
-  line-height: 52px;
+  font-size: 35px;
+  line-height: 45px;
   font-weight: bold;
 }
 
 #wrapper h2 {
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: normal;
   margin-top: 8px;
   opacity: 0.8;
@@ -115,12 +115,17 @@ header {
   padding: 5px 20px;
 }
 
+#links-footer{
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
 #links-footer a {
   border-bottom: 1px solid tomato;
 }
 
 div#links-footer.links{
-  margin: 80px 0 30px 0;
+  margin: 80px 0 0 0;
 }
 
 div#links-footer.links p {
