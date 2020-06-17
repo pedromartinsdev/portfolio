@@ -32,8 +32,8 @@ header {
 .links a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 25px;
+  line-height: 35px;
   font-weight: bold;
   margin: 0 16px;
 }
@@ -51,40 +51,46 @@ body div#wrapper h1{
 .projects {
   max-width: 1000px;
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   gap: 20px;
-
 }
 
 .project {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+}
 
+.project__image-container img{
+  width: 100%;
+  border-radius: 8px 8px 0 0;
 }
 
 .project__content,
-.project__info {
-  padding: 24px;
+.project__links {
+  padding: 0 24px 24px;
 }
 
-.project__info{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.project__level{
-  background-color: #282a36;
-  filter: brightness(80%);
-  text-align: center;
-  border-radius: 8px;
-  color: tomato;
-  font-size: 15px;
+.project__content p {
+  color: white;
   font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+}
 
-  padding: 5px 20px;
+.project__links{
+  display: flex;
+  justify-content: space-between;
+}
+.project__links a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.project__links a img{
+  height: 25px;
 }
 
 #links-footer{
@@ -97,7 +103,7 @@ body div#wrapper h1{
 }
 
 div#links-footer.links{
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 div#links-footer.links p {
@@ -106,12 +112,6 @@ div#links-footer.links p {
 div#links-footer.links p a{
   margin: 0 5px;
   border: none;
-}
-
-.project__image-container img{
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-
 }
 
 @media(max-width: 1000px){
@@ -123,12 +123,9 @@ div#links-footer.links p a{
   }
 }
 
-@media(min-width: 2560){
-  .projects {
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media(min-width: 1440px){
+  #wrapper {
+    padding: 32px;
+    height: 100%;
   }
-}
+} 
