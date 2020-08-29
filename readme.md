@@ -21,7 +21,7 @@ Foram usadas as seguintes tcnologias neste projeto:
 
 Basta Acessar esse link:
 
-[Portfólio](https://pedromartinscap.github.io/portfolio-without-backend/index.html)
+[Portfólio](https://pedromartinscap.github.io/portfolio)
 
 
 ## :clap: Créditos
