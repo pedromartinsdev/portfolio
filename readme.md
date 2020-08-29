@@ -25,8 +25,9 @@ Basta Acessar esse link:
 
 
 ## :clap: Créditos
+  ### Video Aulas
+  [Rocketseat](https://app.rocketseat.com.br/dashboard)
   ### Ícones
-
   [icons8](https://icons8.com.br/)
 
 Feito com :blue_heart: por Pedro Henrique - [LinkedIn](https://www.linkedin.com/in/pedrohenriqueoliveiramartins/)
