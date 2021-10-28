@@ -21,7 +21,7 @@ Foram usadas as seguintes tcnologias neste projeto:
 
 Basta Acessar esse link:
 
-[Portfólio](https://pedromartinscap.github.io/portfolio)
+[Portfólio](https://pedromartinsdev.github.io/portfolio)
 
 
 ## :clap: Créditos
