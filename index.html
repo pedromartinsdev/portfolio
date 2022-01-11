@@ -1,32 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Pedro Henrique</title>
-    <link rel="stylesheet" href="styles/index.css" />
-  </head>
-  <body>
-    <header>
-      <div class="links">
-        <a href="index.html">Sobre</a>
-        <a href="projects.html">Projetos</a>
-      </div>
-    </header>
-    <div id="wrapper">
-      <img
-        src="https://avatars2.githubusercontent.com/u/59265145?s=460&u=dd14be75e1a362b20675ef1810e28da4fed72c23&v=4"
-        alt="Foto de Pedro Henrique"
-      />
-      <h1>Pedro Henrique</h1>
-      <h2>Programador Full-stack</h2>
-      <p>Aluno da Rocketseat. <br> Tecnologias: HTML, CSS, Javascript e Node.</p>
-    </div>
+<html>
 
-    <div id="links-footer" class="links">
-      <a href="https://github.com/pedromartinsdev" target="blank">Github</a>
-      <a href="https://www.linkedin.com/in/pedrohenriqueoliveiramartins/" target="blank">LinkedIn</a>
-      <p>Feito com &#10084 por <a href="https://www.linkedin.com/in/pedrohenriqueoliveiramartins/">Pedro Henrique</a></p>
+<head>
+  <title>
+    Portfolio - Pedro Martins
+  </title>
+  <link rel="stylesheet" type="text/css" href="src/styles/styles.css">
+</head>
+
+<body>
+  <header>
+    <span>Portfolio</span>
+    <div class="menu">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Projects</a>
     </div>
-  </body>
+    <button>Contato</button>
+  </header>
+  <section class="about-me">
+    <div class="text">
+      <h1>Hello! <br> I'm Pedro Martins</h1>
+      <p>Frontend developer focusing on HTML and CSS, student of nodejs and react at Rocketseat</p>
+      <div class="buttons-container">
+        <a href=""><img src="assets/message.svg" alt=""><span>Email me</span></a>
+        <a href=""><img src="assets/download.svg" alt=""><span>Download CV</span></a>
+      </div>
+    </div>
+    <div class="picture">
+      <img
+        src="https://media-exp1.licdn.com/dms/image/C4D03AQHvtBKyFHb8qA/profile-displayphoto-shrink_200_200/0/1638733926536?e=1646870400&v=beta&t=4iOYDwmOZWMtS472tvLTnvpQgAmOlVUTuc8d-C05zwM"
+        alt="">
+    </div>
+  </section>
+  <section class="techs">
+    <div class="container-techs">
+      <img src="assets/html.svg" alt="Logo do HTML">
+      <img src="assets/css.svg" alt="Logo do CSS">
+      <img src="assets/node.svg" alt="Logo do nodejs">
+    </div>
+  </section>
+  <section class="projects">
+    <h2>Developed projects</h2>
+    <div id="project-container">
+      <div class="project-card">
+        <img src="assets/html.svg" alt="Logo da tech">
+        <span>Nome do projeto</span>
+      </div>
+      <div class="project-card">
+        <img src="assets/css.svg" alt="Logo da tech">
+        <span>Nome do projeto</span>
+      </div>
+      <div class="project-card">
+        <img src="assets/node.svg" alt="Logo da tech">
+        <span>Nome do projeto</span>
+      </div>
+    </div>
+  </section>
+  <section class="connect">
+    <h2>Let's Connect</h2>
+    <div class="social-container">
+      <img src="assets/github.svg" alt="">
+      <img src="assets/linkedin.svg" alt="">
+    </div>
+  </section>
+  <footer>
+    Created by Pedro
+  </footer>
+</body>
+
 </html>

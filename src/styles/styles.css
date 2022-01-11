@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222A36;
+  font-family: 'Roboto', sans-serif;
+
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* header */
+
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 32px;
+  margin: 10px 0 72px;
+
+  height: 64px;
+  width: 100vw;
+  max-width: 1280px;
+
+}
+
+body header span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+}
+
+body header div {
+  display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+}
+
+body header div a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+body header button {
+  padding: 10px 20px;
+
+  width: 152px;
+  height: 50px;
+
+  background: #676CDB;
+  border: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+}
+
+/* section-about-me */
+
+.about-me {
+  display: flex;
+
+  padding: 32px;
+
+  width: 1280px;
+
+  margin-bottom: 72px;
+}
+
+.text h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.text p {
+  width: 50%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.buttons-container {
+  display: flex;
+  width: 50%;
+  height: 64px;
+}
+
+.buttons-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  height: 64px;
+
+  background: #676CDB;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.buttons-container a:nth-child(2) {
+  background-color: #222A36;
+}
+
+.buttons-container a img {
+  margin-right: 5px;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #000000;
+  height: 200px;
+
+  width: 100%;
+
+  padding: 50px 130px;
+}
+
+.container-techs {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+}
+
+h2 {
+  height: 95px;
+
+  margin: 28px 0;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 180%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #FFFFFF;
+
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+
+  padding-bottom: 32px;
+
+  width: 1280px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+
+  height: 24px;
+  width: 24px;
+
+  width: 403.01px;
+  height: 179px;
+  left: 95px;
+  top: 1135px;
+
+  padding: 32px;
+
+  background: #676CDB;
+}
+
+.project-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.project-card span {
+  margin-top: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  color: #222A36;
+}
+
+.connect {
+  width: 100%;
+  height: 404px;
+
+  background: #000000;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;  
+
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+
+  text-align: center;
+  letter-spacing: 0.3px;
+
+  background: #000000;
+  color: rgba(255, 255, 255, 0.5);
+
+}
