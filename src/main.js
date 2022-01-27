@@ -1,24 +1,32 @@
-axios.get('https://api.github.com/users/pedromartinsdev/repos')
+const repos = axios.get('https://api.github.com/users/pedromartinsdev/repos')
     .then(function (response) {
         const starredRepos = response.data.filter(starredRepos => starredRepos.stargazers_count !== 0)
-        console.log(starredRepos)
+        createNewProjectCard(starredRepos)    
     })
     .catch(function (error) {
         console.warn(error);
     });
 
+function createNewProjectCard(repos) {
+    for (const repo in repos) {
+        if (Object.hasOwnProperty.call(repos, repo)) {
+            const repoStarred = repos[repo];
 
-document.body.onload = adcElemento;
+            const a = document.createElement('a');
 
-function adcElemento() {
-    // cria um novo elemento div
-    // e dá à ele conteúdo
-    var divNova = document.createElement("div");
-    var conteudoNovo = document.createTextNode("Olá, cumdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddprimentos!");
-    divNova.appendChild(conteudoNovo); //adiciona o nó de texto à nova div criada
-
-    // adiciona o novo elemento criado e seu conteúdo ao DOM
-    var divAtual = document.getElementById("projects-container");
-
-    document.body.insertBefore(divNova, divAtual);
+            const div = document.createElement('div');
+            div.setAttribute('class', 'project-card')
+            const body = document.getElementById('projects-container')
+            body.append(a)
+            a.append(div)
+            a.setAttribute('href', repoStarred.svn_url)
+            a.setAttribute('target', '_blank')
+            const p = document.createElement('p');
+            const span = document.createElement('span');
+            div.append(span, p)
+            
+            span.innerText = repoStarred.name.toUpperCase()
+            p.innerText = repoStarred.description
+        }
+    }
 }

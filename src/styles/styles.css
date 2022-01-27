@@ -53,6 +53,8 @@ body header div {
   width: 300px;
 }
 
+
+
 body header div a {
   font-family: Poppins;
   font-style: normal;
@@ -63,21 +65,23 @@ body header div a {
   color: #FFFFFF;
 }
 
-body header button {
-  padding: 10px 20px;
+body header>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 152px;
-  height: 50px;
+  width: 16%;
+  height: 48px;
 
   background: #676CDB;
-  border: none;
   font-family: Poppins;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 20px;
-  line-height: 30px;
-
+  line-height: 120%;
   color: #FFFFFF;
+
+  text-decoration: none;
 }
 
 /* section-about-me */
@@ -148,6 +152,10 @@ body header button {
   justify-content: center;
 }
 
+.picture img {
+  border-radius: 50%;
+}
+
 .techs {
   display: flex;
   align-items: center;
@@ -187,7 +195,7 @@ h2 {
 
 }
 
-#project-container {
+#projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
@@ -197,26 +205,21 @@ h2 {
   width: 1280px;
 }
 
+#projects-container a {
+  text-decoration: none;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
 
-  height: 24px;
-  width: 24px;
-
   width: 403.01px;
   height: 179px;
-  left: 95px;
-  top: 1135px;
 
   padding: 32px;
 
   background: #676CDB;
-}
 
-.project-card img {
-  width: 40px;
-  height: 40px;
 }
 
 .project-card span {
@@ -226,7 +229,19 @@ h2 {
   font-weight: bold;
   font-size: 20px;
   line-height: 120%;
-  color: #222A36;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.project-card p {
+  margin-top: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 120%;
+  color: #1a212c;
+  text-decoration: none;
 }
 
 .connect {
@@ -248,7 +263,7 @@ footer {
   justify-content: center;
   align-items: center;
 
-  width: 100%;  
+  width: 100%;
 
 
   font-family: Poppins;
