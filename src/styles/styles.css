@@ -136,6 +136,7 @@ body header>a {
   font-size: 20px;
   line-height: 120%;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .buttons-container a:nth-child(2) {
