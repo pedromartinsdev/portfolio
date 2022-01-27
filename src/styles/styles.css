@@ -27,12 +27,15 @@ body header {
   justify-content: space-between;
   align-items: center;
 
-  padding: 32px;
-  margin: 10px 0 72px;
+  padding: 0 190px;
 
   height: 64px;
   width: 100vw;
-  max-width: 1280px;
+
+  position: fixed;
+  z-index: 100;
+
+  background: #222A36;
 
 }
 
@@ -93,7 +96,7 @@ body header>a {
 
   width: 1280px;
 
-  margin-bottom: 72px;
+  margin: 72px 0;
 }
 
 .text h1 {
