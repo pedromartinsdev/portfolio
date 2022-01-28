@@ -1,8 +1,12 @@
-# Portfolio 2.0 - Em construção ⚠️
+# Portfolio
 
 ## :books: Projeto
 
 Portfólio estático(sem back-end) para o github pages.
+
+- [x] Criar layout básico de um portfolio
+- [x] Buscar repositórios que possuem stars no github
+- [ ] Implementar responsividade 
 
 ## :computer: Tecnologias
 
@@ -24,3 +28,4 @@ Basta Acessar esse link:
   [Rocketseat](https://www.rocketseat.com.br)
   ### Ícones
   [icons8](https://icons8.com.br/)
+  ### Layout do portfolio
