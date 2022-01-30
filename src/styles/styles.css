@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&display=swap');
+:root{
+  --colored-button: #6C72CB;
+}
+
 
 * {
   box-sizing: border-box;
@@ -12,7 +13,6 @@ body {
   background-color: #222A36;
   font-family: 'Roboto', sans-serif;
 
-  max-width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -27,10 +27,11 @@ body header {
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 190px;
 
-  height: 64px;
-  width: 100vw;
+  height: 72px;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 8px;
 
   position: fixed;
   z-index: 100;
@@ -56,8 +57,6 @@ body header div {
   width: 300px;
 }
 
-
-
 body header div a {
   font-family: Poppins;
   font-style: normal;
@@ -74,10 +73,10 @@ body header>a {
   justify-content: center;
 
   width: 16%;
-  height: 48px;
+  height: 64px;
 
-  background: #676CDB;
-  font-family: Poppins;
+  background: var(--colored-button);
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -91,16 +90,20 @@ body header>a {
 
 .about-me {
   display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
 
-  padding: 32px;
-
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
 
   margin: 72px 0;
+
+  display: flex;
+  align-items: center;
 }
 
 .text h1 {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -109,13 +112,13 @@ body header>a {
 }
 
 .text p {
-  width: 50%;
-  font-family: Poppins;
+  width: 80%;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 180%;
   color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 32px;
 }
 
 .buttons-container {
@@ -132,7 +135,7 @@ body header>a {
   width: 50%;
   height: 64px;
 
-  background: #676CDB;
+  background: var(--colored-button);
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -282,4 +285,50 @@ footer {
   background: #000000;
   color: rgba(255, 255, 255, 0.5);
 
+}
+
+
+@media screen and (max-width: 1024px) {
+  .picture img {
+    max-width: 320px;
+  }
+
+  .text h1 {
+    font-size: 48px;
+  }
+
+  .about-me {
+    width: auto;
+
+  }
+
+  .text {
+    margin-right: 160px;
+
+  }
+
+  .about-me p {
+    width: 400px;
+  }
+
+  .techs {
+    width: 100%;
+
+    padding: 0;
+  }
+
+  .buttons-container {
+    display: flex;
+    width: auto;
+    height: 64px;
+  }
+  #projects-container {
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  
 }
