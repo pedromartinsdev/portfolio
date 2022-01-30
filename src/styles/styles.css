@@ -290,10 +290,6 @@ footer {
 
 
 @media screen and (max-width: 1024px) {
-  .picture img {
-    max-width: 320px;
-  }
-
   .text h1 {
     font-size: 48px;
   }
