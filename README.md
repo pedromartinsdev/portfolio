@@ -8,6 +8,8 @@ Portfólio estático(sem back-end) para o github pages.
 - [x] Buscar repositórios que possuem stars no github
 - [ ] Implementar responsividade 
 
+![](assets/portfolio.gif)
+
 ## :computer: Tecnologias
 
 Foram usadas as seguintes tecnologias neste projeto:
