@@ -30,8 +30,7 @@ body header {
 
   height: 72px;
   width: 100%;
-  max-width: 1280px;
-  padding: 0 8px;
+  padding: 0 100px;
 
   position: fixed;
   z-index: 100;
@@ -160,7 +159,9 @@ body header>a {
 }
 
 .picture img {
+  height: 320px;
   border-radius: 50%;
+  filter: contrast(115%);
 }
 
 .techs {
@@ -326,9 +327,4 @@ footer {
     grid-template-columns: 1fr 1fr;
     width: auto;
   }
-}
-
-
-@media screen and (max-width: 425px) {
-  
 }
